@@ -10,7 +10,6 @@ import com.example.foroom.constants.Constants.VALID_PASSWORD
 import com.example.foroom.constants.Constants.WRONG_PASSWORD
 import com.example.foroom.steps.LoginSteps
 import com.example.foroom.steps.RegistrationSteps
-import org.junit.After
 import org.junit.Before
 import org.junit.Rule
 import org.junit.Test
@@ -29,10 +28,6 @@ class LoginAndRegistrationTests {
     fun setUp() {
         loginSteps = LoginSteps()
         registrationSteps = RegistrationSteps()
-    }
-
-    @After
-    fun tearDown() {
         loginSteps.logOutIfLoggedIn()
     }
 
